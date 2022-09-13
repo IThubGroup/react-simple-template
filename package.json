@@ -1,0 +1,36 @@
+{
+	"name": "simple-react-app",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"editorconfig": "editorconfig-checker",
+		"test": "npm run editorconfig",
+		"build:prod": "rimraf ./docs && webpack --mode production --config webpack.config.js",
+		"build:dev": "rimraf ./docs && webpack --mode development --config webpack.config.js",
+		"start": "webpack serve"
+	},
+	"dependencies": {
+		"core-js": "^3.21.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-router-dom": "^6.3.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.5",
+		"@babel/preset-env": "^7.16.11",
+		"@babel/preset-react": "^7.16.7",
+		"@svgr/webpack": "^6.2.1",
+		"babel-loader": "^8.2.3",
+		"css-loader": "^6.6.0",
+		"editorconfig-checker": "^4.0.2",
+		"html-webpack-plugin": "^5.5.0",
+		"rimraf": "^3.0.2",
+		"sass-loader": "^12.6.0",
+		"style-loader": "^3.3.1",
+		"url-loader": "^4.1.1",
+		"webpack": "^5.69.1",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.7.4"
+	}
+}
