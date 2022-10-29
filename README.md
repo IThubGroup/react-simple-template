@@ -9,7 +9,14 @@
     <li>Установить зависимости node_modules
         <ul>
             <li>При наличии прав администратора
-                <div><code>npm install -g yarn</code></div>
+                <ul>
+                    <li>OS Windows
+                        <div><code>npm install -g yarn</code></div>
+                    </li>
+                    <li>MaxOs / Linux
+                        <div><code>sudo npm install -g yarn</code></div>
+                    </li>
+                </ul>
                 <div><code>yarn install</code></div>
             </li>
             <li>Без прав администратора
@@ -19,6 +26,13 @@
     </li>
     <li>
         Запустить проект
-        <div><code>npm start</code></div>
+        <ul>
+            <li>Если yarn установлен
+                <div><code>yarn start</code></div>
+            </li>
+            <li>Если yarn не установлен
+                <div><code>npm start</code></div>
+            </li>
+        </ul>
     </li>
 </ol>
